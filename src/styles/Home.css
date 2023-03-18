@@ -1,0 +1,274 @@
+.home {
+  padding-top: 110px;
+  width: 80%;
+  margin: 0 auto;
+}
+.home .hello-icon {
+  font-size: 40px;
+}
+.hello-icon-with-typography {
+  margin: 32px auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.hello-icon-with-typography h1 {
+  font-size: 51.2px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.hello-icon-with-typography h1 > span {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hello-icon-with-typography h1 > span:hover {
+  color: hsl(202deg 80% 53%);
+  animation: scale 0.4s ease-in-out;
+}
+.hello-icon-with-typography p {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.resume-contact-button {
+  margin: 32px auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 12px;
+}
+.resume-contact-button > .resume,
+.contact-me {
+  width: 50%;
+  height: 54px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.resume-contact-button > .resume {
+  background-color: hsl(202deg 80% 53%);
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.resume:hover {
+  animation: scale 1s ease forwards;
+}
+.contact-me:hover {
+  animation: scale 1s ease forwards;
+}
+.resume-contact-button > .contact-me {
+  background-color: transparent;
+  border: 2px solid hsl(202deg 80% 53%);
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+/* animation  the h1 with  the resume  button and  contact button  */
+.hello-icon-with-typography,
+.resume-contact-button {
+  opacity: 0;
+  animation: slide-from-left 0.9s ease forwards;
+}
+
+.my-image-contain {
+  width: 250px;
+  margin: 32px auto;
+}
+.my-image-contain img {
+  width: 250px;
+  opacity: 0;
+  animation: scale_img 0.4s ease-out forwards;
+}
+.react-js-css-contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  width: 90%;
+  margin: 0 auto;
+}
+.js-icon-contain {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(215deg 28% 17%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+  opacity: 0;
+  animation: scale_img 0.4s ease-out forwards;
+  cursor: pointer;
+}
+.js-icon-contain:hover {
+  animation: buzz-out 0.5s ease forwards;
+}
+.js-icon-contain img {
+  width: 60px;
+  height: 60px;
+}
+.react-icon-contain {
+  width: 150px;
+  height: 150px;
+  background-color: hsl(215deg 28% 17%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+  opacity: 0;
+  animation: scale_img 0.4s ease-out forwards;
+  cursor: pointer;
+}
+.react-icon-contain:hover {
+  animation: buzz-out 0.5s ease forwards;
+}
+.react-icon-contain img {
+  width: 90px;
+  height: 90px;
+}
+.css-icon-contain {
+  width: 70px;
+  height: 70px;
+  background-color: hsl(215deg 28% 17%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+  opacity: 0;
+  animation: scale_img 0.4s ease-out forwards;
+  cursor: pointer;
+}
+.css-icon-contain:hover {
+  animation: buzz-out 0.5s ease forwards;
+}
+.css-icon-contain img {
+  width: 42px;
+  height: 42px;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50%,
+  75%,
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes scale_img {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(0.1);
+    opacity: 0.1;
+  }
+  20% {
+    transform: scale(0.2);
+    opacity: 0.2;
+  }
+  30% {
+    transform: scale(0.3);
+    opacity: 0.3;
+  }
+  40% {
+    transform: scale(0.4);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(0.6);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  90% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes buzz-out {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  40% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  80% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 1;
+  }
+}
+@media all and (min-width: 425px) {
+  .react-js-css-contain {
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: self-start;
+  }
+}
+@media all and (min-width: 1024px) {
+  .home {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .my-image-contain {
+    width: 350px;
+  }
+  .my-image-contain img {
+    width: 350px;
+  }
+  .react-js-css-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .react-icon-contain {
+    margin-left: 50px;
+  }
+}

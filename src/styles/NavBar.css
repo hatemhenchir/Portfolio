@@ -1,0 +1,135 @@
+nav {
+  width: 100vw;
+  height: 90px;
+  border: 1px solid hsl(215deg 28% 17%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+nav .list_icons {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: hsl(215deg 28% 17%);
+  font-size: 20px;
+  padding-top:6px ;
+  /* color  icon  in  the <a> */
+}
+.social-icon a {
+  color: hsl(0, 100%, 100%);
+}
+.social-icon:hover {
+  background-color: hsl(202deg 80% 53%);
+}
+.burger-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(202deg 80% 53%);
+  color: hsl(0, 100%, 100%);
+}
+.burger-icon-open {
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: hsl(202deg 80% 53%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: slide-from-top 0.5s ease-in-out forwards;
+}
+
+.hix {
+  color: hsl(0, 100%, 100%);
+  width: 45px;
+  height: 45px;
+  font-size: 45px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+.links a {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
+  font-weight: 500;
+  font-size: 20.8px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: show 0.5s ease-in-out forwards;
+}
+.mobile_nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav designe */
+.desktop_nav{
+    
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.desktop_nav a{
+    text-decoration: none;
+    color: hsl(0, 100%, 100%);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.desktop_nav a:hover{
+    border-bottom: solid hsl(202deg 80% 53%);
+    padding-bottom: 30px;
+    transition: all .4s;
+    color: hsl(202deg 80% 53%);
+}
+/* animation*/
+@keyframes slide-from-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+

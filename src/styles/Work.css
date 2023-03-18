@@ -1,0 +1,109 @@
+.work {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.work h2 {
+  color: hsl(0, 100%, 100%);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.work hr {
+  width: 100px;
+  margin: 0 auto 64px auto;
+}
+.card-work {
+  border-radius: 12px;
+  background-color: hsl(215, 28%, 17%);
+  padding: 16px;
+  width: 300px;
+  margin: 12px auto;
+}
+.container-img-work {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.container-img-work img {
+  width: 100%;
+  height: 100%;
+  scale: 1.6;
+}
+.card-work h3 {
+  margin: 12px 0;
+  color: hsl(0, 100%, 100%);
+}
+.card-work p {
+  color: hsla(0, 100%, 100%, 0.6);
+  text-align: start;
+  font-size: 16px;
+  width: 250px;
+  margin-bottom: 32px;
+}
+.live-github-button {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.live-button,
+.github-button {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(221, 39%, 11%);
+  cursor: pointer;
+}
+.live-button:hover,
+.github-button:hover {
+  animation: scale 0.4s ease-out forwards;
+}
+.live-button a,
+.github-button a {
+  color: hsl(0, 100%, 100%);
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 32px;
+  background-color: hsla(215, 28%, 17%, 0.4);
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .work-grid {
+    max-width: 1222.19px;
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .container-img-work {
+    position: relative;
+  }
+
+  .container-img-work:hover .overlay {
+    display: flex;
+  }
+  .live-github-button {
+    display: none;
+  }
+}
