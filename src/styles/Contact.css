@@ -1,0 +1,92 @@
+.contact {
+  width: 100vw;
+  margin: 32px auto;
+  text-align: center;
+}
+.contact h2 {
+  color: hsl(0, 100%, 100%);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.contact hr {
+  width: 100px;
+  margin: 0 auto 64px auto;
+}
+.phone_email {
+  background-color: hsl(215deg 27.91% 16.86%);
+  width: 90%;
+  max-width: 383px;
+  margin: 0 auto;
+  height: 72px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+.phone_email a {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
+}
+.phone_email img {
+  width: 40px;
+  height: 40px;
+}
+.grid_contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.form_contact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    margin: 64px auto;
+}
+input{
+    background-color: hsl(215deg 27.91% 16.86%);
+    height: 54.38px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding-left: 16px;
+    letter-spacing: 1px;
+    color: hsl(202.11deg 79.83% 53.33%);
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+textarea{
+    background-color: hsl(215deg 27.91% 16.86%);
+    color: hsl(202.11deg 79.83% 53.33%);
+    height: 170px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding-left: 16px;
+    padding-top: 16px;
+    letter-spacing: 1px;
+}
+.send_button_email{
+    width: 181px;
+    height: 56px;
+    margin: 16px auto;
+    background-color: hsl(202.11deg 79.83% 53.33%);
+    color: hsl(0, 100%, 100%);
+    border: none;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+@media all and (min-width:1024px){
+    .grid_contact{
+        flex-direction: row;
+        row-gap: 0;
+        width: 900px;
+        margin: 0 auto;
+    }
+}

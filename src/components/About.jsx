@@ -1,39 +1,86 @@
 import "../styles/About.css";
 import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 const About = () => {
-    const {ref,inView}=useInView();
+  const { ref, inView } = useInView({ threshold: 0.4 });
+  const about_me_animation = useAnimation();
+  const cards_animation = useAnimation();
+  useEffect(() => {
+    if (inView) {
+      about_me_animation.start({
+        transform: "translateX(0)",
+        opacity: 1,
+        transition: {
+          duration: 0.9,
+          ease: "easeOut",
+        },
+        
+      });
+      cards_animation.start({
+        transform: "translateX(0)",
+        opacity: 1,
+        transition: {
+          duration: 0.9,
+          ease: "easeOut",
+        },
+        
+      });
+    }
+    if (!inView) {
+      about_me_animation.start({
+        transform: "translateX(-100%)",
+        opacity: 0,
+        transition: {
+          duration: 0,
+        },
+       
+      });
+      cards_animation.start({
+        transform: "translateX(100%)",
+        opacity: 0,
+        transition: {
+          duration: 0,
+        },
+        
+      });
+    }
+  },[about_me_animation,inView,cards_animation]);
   return (
     <section className="about" id="about" ref={ref}>
       <h2>About me</h2>
-      <hr/>
-      {inView&&(
+      <hr />
+
       <div className="about-grid">
-        <article className="details-about-me">
+        <motion.article
+          className="details-about-me"
+          animate={about_me_animation}
+        >
           <h3>Information about me</h3>
           <p>
             I'm a frontend developer with a passion for creating exceptional web
             experiences that inspire and engage. My approach to development is
             equal parts technical expertise and artistic creativity.
           </p>
-        </article>
-        <div className="cards-about">
+        </motion.article>
+        <motion.div className="cards-about" animate={cards_animation}>
           <article className="item">
             <span>4+</span>
-            <hr/>
+            <hr />
             <p>MONTHS OF PRACTISE</p>
           </article>
           <article className="item">
             <span>100%</span>
-            <hr/>
+            <hr />
             <p>WILLINGNESS TO LEARN</p>
           </article>
           <article className="item">
             <span>100%</span>
-            <hr/>
+            <hr />
             <p>DEDICATION AND HARD WORK</p>
           </article>
-        </div>
-      </div>)}
+        </motion.div>
+      </div>
     </section>
   );
 };

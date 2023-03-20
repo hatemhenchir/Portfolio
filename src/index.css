@@ -4,9 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+}
+html{
+  overflow-x: hidden;
+  width: 100vw;
 }
 body{
   background-color: hsl(221, 39%, 11%);
   font-family: 'Poppins', sans-serif;
   height: 300vh;
+  overflow-x: hidden;
 }

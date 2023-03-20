@@ -14,11 +14,6 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
-.details-about-me {
-  /* slide-from-left animation exist  in Home.css */
-  opacity: 0;
-  animation: slide-from-left 1.2s ease forwards;
-}
 .details-about-me h3 {
   display: none;
 }
@@ -58,10 +53,7 @@
   letter-spacing: 1px;
   width: 130px;
 }
-.cards-about {
-  opacity: 0;
-  animation: slide-from-right 1.2s ease forwards;
-}
+
 @keyframes slide-to-top {
   from {
     transform: translateY(0);
@@ -105,7 +97,6 @@
   .cards-about {
     display: flex;
     column-gap: 16px;
-
     margin-right: 100px;
   }
   .item {

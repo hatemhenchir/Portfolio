@@ -69,12 +69,6 @@
   font-size: 16px;
   letter-spacing: 1px;
 }
-/* animation  the h1 with  the resume  button and  contact button  */
-.hello-icon-with-typography,
-.resume-contact-button {
-  opacity: 0;
-  animation: slide-from-left 0.9s ease forwards;
-}
 
 .my-image-contain {
   width: 250px;
@@ -82,8 +76,6 @@
 }
 .my-image-contain img {
   width: 250px;
-  opacity: 0;
-  animation: scale_img 0.4s ease-out forwards;
 }
 .react-js-css-contain {
   display: flex;
@@ -103,8 +95,6 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px rgb(0 0 0 / 40%);
-  opacity: 0;
-  animation: scale_img 0.4s ease-out forwards;
   cursor: pointer;
 }
 .js-icon-contain:hover {
@@ -123,8 +113,6 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px rgb(0 0 0 / 40%);
-  opacity: 0;
-  animation: scale_img 0.4s ease-out forwards;
   cursor: pointer;
 }
 .react-icon-contain:hover {
@@ -143,8 +131,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 20px rgb(0 0 0 / 40%);
-  opacity: 0;
-  animation: scale_img 0.4s ease-out forwards;
+  
   cursor: pointer;
 }
 .css-icon-contain:hover {

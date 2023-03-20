@@ -1,0 +1,48 @@
+.skills {
+  width: 80%;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.skills h2 {
+  color: hsl(0, 100%, 100%);
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.skills hr {
+  width: 100px;
+  margin: 0 auto 64px auto;
+}
+.all_skills{
+   max-width: 1100px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(2,70px);
+   justify-content: center;
+   gap: 50px ;
+   
+}
+.skills_contain{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(215deg 27.91% 16.86%);
+    
+}
+.skills_contain img{
+    width: 35px;
+    height: 35px;
+}
+@media all and (min-width:768px){
+    .all_skills{
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        
+    }
+}
+
