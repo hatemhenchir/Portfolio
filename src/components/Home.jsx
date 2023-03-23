@@ -6,6 +6,7 @@ import css_icon from "../images/css-icon.png";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import cv from "../Resume/myResume.pdf";
 const Home = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
   const hello_icon_with_typography_and_button_animation = useAnimation();
@@ -73,7 +74,14 @@ const Home = () => {
           className="resume-contact-button"
           animate={hello_icon_with_typography_and_button_animation}
         >
-          <button className="resume">Resume</button>
+          <a
+            href={cv}
+            download="Hatem_Henchir.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="resume">Resume</button>
+          </a>
           <button
             className="contact-me"
             onClick={(e) => {

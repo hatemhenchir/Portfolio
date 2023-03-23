@@ -15,7 +15,6 @@ const About = () => {
           duration: 0.9,
           ease: "easeOut",
         },
-        
       });
       cards_animation.start({
         transform: "translateX(0)",
@@ -24,7 +23,6 @@ const About = () => {
           duration: 0.9,
           ease: "easeOut",
         },
-        
       });
     }
     if (!inView) {
@@ -34,7 +32,6 @@ const About = () => {
         transition: {
           duration: 0,
         },
-       
       });
       cards_animation.start({
         transform: "translateX(100%)",
@@ -42,10 +39,9 @@ const About = () => {
         transition: {
           duration: 0,
         },
-        
       });
     }
-  },[about_me_animation,inView,cards_animation]);
+  }, [about_me_animation, inView, cards_animation]);
   return (
     <section className="about" id="about" ref={ref}>
       <h2>About me</h2>
@@ -58,9 +54,9 @@ const About = () => {
         >
           <h3>Information about me</h3>
           <p>
-            I'm a frontend developer with a passion for creating exceptional web
-            experiences that inspire and engage. My approach to development is
-            equal parts technical expertise and artistic creativity.
+            Experienced frontend developer with ReactJS proficiency. Passionate
+            about creating visually stunning web applications with exceptional
+            user experiences using HTML, CSS, and JavaScript.
           </p>
         </motion.article>
         <motion.div className="cards-about" animate={cards_animation}>

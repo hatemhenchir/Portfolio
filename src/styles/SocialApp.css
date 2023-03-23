@@ -1,27 +1,26 @@
-.social-app{
-   
-    display: none;
-    flex-direction: column;
-    width: 70px;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 500px;
-    left: 2px;
-    row-gap: 12px;
+.social-app {
+  display: none;
+  flex-direction: column;
+  width: 4.375rem;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 31.25rem;
+  left: .125rem;
+  row-gap: .75rem;
 }
-.social-app a{
-    color: hsl(0, 100%, 100%);
+.social-app a {
+  color: hsl(0, 100%, 100%);
 }
-/*  class  social icon  exist  in  the  file  NavBar.css */ 
+/*  class  social icon  exist  in  the  file  NavBar.css */
 
-@media all and (min-width:1024px){
-    .social-app{
-        display: flex;
-    }
+@media all and (min-width: 1024px) {
+  .social-app {
+    display: flex;
+  }
 }
-@media all and (min-width:1440px){
-    .social-app{
-        top: calc(100vh - 180px);
-    }
+@media all and (min-width: 1440px) {
+  .social-app {
+    top: calc(100vh - 180px);
+  }
 }

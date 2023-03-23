@@ -9,10 +9,11 @@
 html{
   overflow-x: hidden;
   width: 100vw;
+  height: 100%;
 }
 body{
   background-color: hsl(221, 39%, 11%);
   font-family: 'Poppins', sans-serif;
-  height: 300vh;
   overflow-x: hidden;
+
 }

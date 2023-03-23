@@ -1,7 +1,7 @@
 nav {
   width: 100vw;
-  height: 90px;
-  border: 1px solid hsl(215deg 28% 17%);
+  height: 5.625rem;
+  border: .0625rem solid hsl(215deg 28% 17%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,21 +10,21 @@ nav {
   z-index: 2;
 }
 nav .list_icons {
-  width: 150px;
+  width: 9.375rem;
   display: flex;
   justify-content: space-between;
 }
 .social-icon {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   
   background-color: hsl(215deg 28% 17%);
-  font-size: 20px;
-  padding-top:6px ;
+  font-size: 1.25rem;
+  padding-top:.375rem ;
   /* color  icon  in  the <a> */
 }
 .social-icon a {
@@ -34,8 +34,8 @@ nav .list_icons {
   background-color: hsl(202deg 80% 53%);
 }
 .burger-icon {
-  width: 45px;
-  height: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ nav .list_icons {
   color: hsl(0, 100%, 100%);
 }
 .burger-icon-open {
-  top: 0px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -60,26 +60,26 @@ nav .list_icons {
 
 .hix {
   color: hsl(0, 100%, 100%);
-  width: 45px;
-  height: 45px;
-  font-size: 45px;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  font-size: 2.8125rem;
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 1.875rem;
+  right: 1.25rem;
 }
 .links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
+  height: 18.75rem;
 }
 .links a {
   text-decoration: none;
   color: hsl(0, 100%, 100%);
   font-weight: 500;
-  font-size: 20.8px;
-  letter-spacing: 2px;
+  font-size: 1.3rem;
+  letter-spacing: .125rem;
   opacity: 0;
   animation: show 0.5s ease-in-out forwards;
 }
@@ -93,7 +93,7 @@ nav .list_icons {
 /* nav designe */
 .desktop_nav{
     
-    width: 450px;
+    width: 28.125rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,11 +104,11 @@ nav .list_icons {
     text-decoration: none;
     color: hsl(0, 100%, 100%);
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
 }
 .desktop_nav a:hover{
     border-bottom: solid hsl(202deg 80% 53%);
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     transition: all .4s;
     color: hsl(202deg 80% 53%);
 }
