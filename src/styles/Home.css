@@ -22,6 +22,11 @@
 .hello-icon-with-typography h1 > span {
   cursor: pointer;
   display: inline-block;
+ /* will be not selectable*/
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none; /* Standard */
 }
 
 .hello-icon-with-typography h1 > span:hover {
@@ -85,9 +90,11 @@
 .my-image-contain {
   width: 250px;
   margin: 32px auto;
+  
 }
 .my-image-contain img {
   width: 250px;
+  
 }
 .react-js-css-contain {
   display: flex;
@@ -97,6 +104,11 @@
   row-gap: 32px;
   width: 90%;
   margin: 0 auto;
+  /* will be not selectable*/
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none; /* Standard */
 }
 .js-icon-contain {
   width: 100px;
