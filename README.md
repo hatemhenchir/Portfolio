@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio website! This website was built using ReactJS and Framer Motion for scroll animations. It showcases my projects, skills, and experience as a developer.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To install the project, clone the repository and run the following command:
 
-### `npm start`
+ `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+To run the project locally, use the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm start`
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The website will be available at http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Navigation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The website has a navigation bar that allows users to easily navigate between different sections. The sections include:
 
-### `npm run eject`
+- Home: A brief introduction to who I am and what I do.
+- About: More detailed information about my background.
+- Works: A showcase of my recent projects, including links to live demos and GitHub repositories.
+- Skills: A list of the programming languages, frameworks, and tools that I'm proficient in.
+- Contact: A form where users can send me a message.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Animations
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Framer Motion was used to create smooth and engaging scroll animations throughout the website. Here's an example of how to use Framer Motion to add a scroll animation to a component:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```jsx
+import { motion } from "framer-motion";
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+const MyComponent = () => {
+  return (
+    <motion.div animate={{ y: 50 }} transition={{ duration: 0.5 }}>
+      This component will move 50 pixels down when rendered
+    </motion.div>
+  );
+};
+```
+### EmailJS
 
-## Learn More
+This project uses EmailJS to send emails from the contact form. To work with EmailJS, you need to create a `.env` file in the root directory and put the following information:
+```makefile
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template
+REACT_APP_EMAILJS_USER_ID=your_user_id
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Make sure to replace `your_service_id`, `your_template`, and `your_user_id` with your actual EmailJS service ID, template ID, and user ID, respectively.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Home page
 
-### Analyzing the Bundle Size
+| ![](./screenshots/Home_desktop.png) | ![](./screenshots/Home_mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### About page
 
-### Making a Progressive Web App
+| ![](./screenshots/About_desktop.png) | ![](./screenshots/About_mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Work page
 
-### Advanced Configuration
+| ![](./screenshots/Work_desktop.png) | ![](./screenshots/Work_mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Skills page
 
-### Deployment
+| ![](./screenshots/Skills_desktop.png) | ![](./screenshots/Skills_mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Contact page
 
-### `npm run build` fails to minify
+| ![](./screenshots/Contact_desktop.png) | ![](./screenshots/Contact_mobile.png) |
+| ------------------------------ | ----------------------------- |
+| Desktop version                | Mobile version                |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Demo
+
+Check out the live demo of my portfolio at https://hatemhenchir.netlify.app.
+
+## Contributing
+
+If you'd like to contribute to my portfolio, please open an issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the MIT License.
