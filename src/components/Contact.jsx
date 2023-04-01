@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
         <div className="phone_email">
           <img src={phone} alt="" />
-          <a href="tel:+21623788409">+126 23 788 409</a>
+          <a href="tel:+21623788409">+216 23 788 409</a>
         </div>
       </div>
       <form action="" className="form_contact" onSubmit={sendEmail}>
